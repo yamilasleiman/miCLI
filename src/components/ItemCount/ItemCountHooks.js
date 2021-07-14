@@ -23,6 +23,7 @@ export default function ItemCount() {
             <button onClick={restar}>-1</button>
             <span>{count}</span>
             <button onClick={sumar}>+1</button>
+            <button>Agregar al carrito</button>
         </div>
     )
 }
