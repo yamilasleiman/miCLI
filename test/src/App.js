@@ -1,8 +1,8 @@
 import './Styles/App.scss';
 import NavBar from './components/NavBar';
 import CartWidget from './components/CartWidget';
-import ContentBuy from './components/ItemListContainer';
-import ItemCountHooks from './components/ItemCount/ItemCountHooks';
+import L from './components/ItemCount/ItemCountHooks';
+import ItemList from './components/ItemListContainer/ItemList';
 
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
     <div className='container'>
       <NavBar name={miNombre} />
       <CartWidget />
-      <ContentBuy name={miNombre}/>
-      <ItemCountHooks/>
+      <L/>
+      <ItemList />
     </div>
   );
 }
