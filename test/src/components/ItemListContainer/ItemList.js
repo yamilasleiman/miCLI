@@ -22,7 +22,7 @@ const getProducts = async () =>{
             }else{
                 reject( new Error('Servidor sin conexion'));
             }
-        }, 3000);    
+        }, );    
     });
     console.log(promesa);
     let data = await promesa;
