@@ -1,8 +1,7 @@
 import './Styles/App.scss';
 import NavBar from './components/NavBar';
 import CartWidget from './components/CartWidget';
-import L from './components/ItemCount/ItemCountHooks';
-import ItemList from './components/ItemListContainer/ItemList';
+import ContentBuy from './components/ContentBuy';
 
 
 function App() {
@@ -11,8 +10,7 @@ function App() {
     <div className='container'>
       <NavBar name={miNombre} />
       <CartWidget />
-      <L/>
-      <ItemList />
+      <ContentBuy name={miNombre}/>
     </div>
   );
 }
