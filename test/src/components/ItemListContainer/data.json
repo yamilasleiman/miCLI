@@ -4,14 +4,14 @@
         "title" : "ray",
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$80",
-        "image":"https://images-na.ssl-images-amazon.com/images/I/81VBPk5pnLL._AC_SL1500_.jpg"
+        "image":"https://i.pinimg.com/originals/c6/58/76/c658764eb7b2894e06831db9b49912e2.jpg"
     },
     {
         "id":3,
         "title" : "ray",
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$80",
-        "image":"https://images-na.ssl-images-amazon.com/images/I/81VBPk5pnLL._AC_SL1500_.jpg"
+        "image":""
     },
     {
         "id":4,

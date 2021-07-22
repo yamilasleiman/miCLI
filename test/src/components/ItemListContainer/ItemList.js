@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import productData from './data.json';
-import ItemCountHooks from './../ItemCount/ItemCountHooks';
+import Item from './Item';
 
 export default function Promises() {
 
@@ -15,10 +15,10 @@ useEffect(() => {
 
 const getProducts = async () =>{
     let ServerOnline = true;
-    let promesa = new Promise((res, reject)=>{
+    let promesa = new Promise((respuesta, reject)=>{
         setTimeout(()=>{
             if(ServerOnline){
-                res(productData);
+                respuesta(productData);
             }else{
                 reject( new Error('Servidor sin conexion'));
             }
@@ -27,17 +27,17 @@ const getProducts = async () =>{
     console.log(promesa);
     let data = await promesa;
     setProducts(data);
-    console.log("_______________________________1");
-    console.log(products);
 }
 
     return (
         <div className='Product_Container'>
-
             {products.map(element => {
                 return (
-                    <ItemCountHooks
-
+                    <Item
+                        title={element.title}
+                        description={element.description}
+                        price={element.price}
+                        image={element.image}
                     />
                 )
             })}
