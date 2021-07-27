@@ -20,9 +20,9 @@ export default function ItemCount() {
         <div>
             <img src={imageL} ></img>
             <h1>Nombre Producto</h1>
-            <button onClick={restar}>-1</button>
+            <button onClick={restar}>-</button>
             <span>{count}</span>
-            <button onClick={sumar}>+1</button>
+            <button onClick={sumar}>+</button>
             <button>Agregar al carrito</button>
         </div>
     )
