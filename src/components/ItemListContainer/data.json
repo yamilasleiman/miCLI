@@ -49,13 +49,6 @@
         "image":"https://i.pinimg.com/564x/ff/e2/fd/ffe2fd33e30ec97dd8b1548a50b1d585.jpg"
     },
     {
-        "id":9,
-        "title" : "ray",
-        "description":"Lorem ipsum dolor sit amet consectetur adip",
-        "price" : "$80",
-        "image":"https://images-na.ssl-images-amazon.com/images/I/81VBPk5pnLL._AC_SL1500_.jpg"
-    },
-    {
         "id":10,
         "title" : "Ray",
         "description":"Lorem ipsum dolor sit amet consectetur adip",
@@ -75,12 +68,5 @@
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$80",
         "image":"https://i.pinimg.com/originals/a9/97/6c/a9976cc3ea9a135c145ea8e8cc508f2f.jpg"
-    },
-    {
-        "id":13,
-        "title" : "ray",
-        "description":"Lorem ipsum dolor sit amet consectetur adip",
-        "price" : "$80",
-        "image":"https://images-na.ssl-images-amazon.com/images/I/81VBPk5pnLL._AC_SL1500_.jpg"
     }
 ]

@@ -1,8 +1,9 @@
 // items de los productos :/
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import productData from './data.json';
 import Item from './Item';
+import { Link } from 'react-router-dom';
 
 export default function Promises() {
 
@@ -33,12 +34,15 @@ const getProducts = async () =>{
         <div className='Product_Container'>
             {products.map(element => {
                 return (
-                    <Item
-                        title={element.title}
-                        description={element.description}
-                        price={element.price}
-                        image={element.image}
-                    />
+                    <Link
+                        to={`/ItemId/${element.id}`} itemId={element.id}>
+                        <Item
+                            title={element.title}
+                            description={element.description}
+                            price={element.price}
+                            image={element.image}
+                        />
+                    </Link>
                 )
             })}
         </div>

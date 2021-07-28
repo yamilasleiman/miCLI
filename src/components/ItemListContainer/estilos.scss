@@ -1,6 +1,16 @@
-
-
-
 .Product_Container {
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+button{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(97, 59, 59);
+    color: #fff;
+    margin-top: 9px;
 }
