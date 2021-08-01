@@ -20,10 +20,10 @@ export default function ItemCount() {
         <div>
             <img src={imageL} ></img>
             <h1>Nombre Producto</h1>
-            <button onClick={restar}>-</button>
+            <button className="item-button" onClick={restar}>-</button>
             <span>{count}</span>
-            <button onClick={sumar}>+</button>
-            <button>Agregar al carrito</button>
+            <button className="item-button" onClick={sumar}>+</button>
+            <button className="item-button">Agregar al carrito</button>
         </div>
     )
 }

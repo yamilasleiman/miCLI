@@ -34,7 +34,7 @@ export default function ItemCount() {
     }
 
     return (
-        <div>
+        <div className="item-product-container">
             <img src={miItem.image} ></img>
             <h2>{miItem.tittle}</h2>
             <p>{miItem.price}</p>

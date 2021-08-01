@@ -2,24 +2,37 @@
 @import '../components/CartWidget/styles.scss';
 @import '../components/ItemListContainer/estilos.scss';
 
+* {
+  margin: 0 auto;
+}
 .nb_container{
- 
-  height: 70px;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  width: 100%;
   position: fixed;
-  z-index: 1;
+  top: 0;
+  padding: 15px 0 15px 0;
+  background: antiquewhite;
 }
 .menu {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
+  display: block;
+  list-style-type: none;
+  padding-left: 2rem;
+  li {
+    padding-left: 2rem;
+    display: inline;
+  }
   a {
     padding: 7px 13px;
     text-decoration: none;
     font-size: 20px;
     text-transform: uppercase;
   }
+}
+
+
+.Product_Container,
+.item-product-container,
+.item-product-carrito-container {
+  margin-top: 100px;
 }
