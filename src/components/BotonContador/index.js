@@ -1,29 +1,28 @@
 import React, { useState } from 'react';
-import imageL from './l.jpg';
 
-export default function ItemCount() {
+export default function ItemCount({ max, min, stock }) {
     const [count, setCount] = useState(0);
 
     const restar = () => {
-        if(count > 0){
+        if(count >= min){
             return setCount(count - 1)
         };
     }
 
     const sumar = () => {
-        if(count < 5 ){
+        if(count < max ){
             return setCount(count + 1) 
         };
     }
 
     return (
         <div>
-            <img src={imageL} ></img>
-            <h1>Nombre Producto</h1>
             <button className="item-button" onClick={restar}>-</button>
             <span>{count}</span>
             <button className="item-button" onClick={sumar}>+</button>
-            <button className="item-button">Agregar al carrito</button>
+            <button className="item-button"> 
+            Agregar al carrito</button>
         </div>
     )
 }
+
