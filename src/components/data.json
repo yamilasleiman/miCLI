@@ -5,9 +5,8 @@
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$1000",
         "image":"https://i.pinimg.com/originals/c8/4b/4f/c84b4f463a5f0330aa8400b53544bb8a.jpg",
-        "max": 5,
-        "min": 2,
-        "inStock": true
+        
+        "inStock": 3
     },
     {
         "id":3,
@@ -15,9 +14,8 @@
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$80",
         "image":"https://i.pinimg.com/originals/be/88/6e/be886e21ba3e7016d1a6e38b848aa0f9.jpg",
-        "max": 5,
-        "min": 2,
-        "inStock": true
+        
+        "inStock": 4
     },
     {
         "id":4,
@@ -25,9 +23,8 @@
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$80",
         "image":"https://i.pinimg.com/originals/c6/58/76/c658764eb7b2894e06831db9b49912e2.jpg",
-        "max": 5,
-        "min": 2,
-        "inStock": true
+        
+        "inStock": 5
     },
     {
         "id":5,
@@ -35,9 +32,8 @@
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$120",
         "image":"https://i.pinimg.com/originals/69/ba/e7/69bae7bd42c73e31e99c2e353b34544f.jpg",
-        "max": 5,
-        "min": 2,
-        "inStock": true
+        
+        "inStock": 1
     },
     {
         "id":6,
@@ -45,9 +41,8 @@
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$80",
         "image":"https://i.pinimg.com/564x/65/f7/76/65f776ea5db956ccd49de5242c81eb38.jpg",
-        "max": 5,
-        "min": 2,
-        "inStock": true
+        
+        "inStock": 2
     },
     {
         "id":7,
@@ -55,9 +50,7 @@
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$80",
         "image":"https://i.pinimg.com/564x/a1/52/90/a1529021abd7c333a4436165e6f9f3e9.jpg",
-        "max": 5,
-        "min": 2,
-        "inStock": true
+        "inStock": 2
     },
     {
         "id":8,
@@ -65,9 +58,7 @@
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$80",
         "image":"https://i.pinimg.com/564x/ff/e2/fd/ffe2fd33e30ec97dd8b1548a50b1d585.jpg",
-        "max": 5,
-        "min": 2,
-        "inStock": true
+        "inStock": 3
     },
     {
         "id":10,
@@ -75,9 +66,8 @@
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$80",
         "image":"https://i.pinimg.com/564x/20/d1/1a/20d11a6762e6fb738dfd5a27cf43de5c.jpg",
-        "max": 5,
-        "min": 2,
-        "inStock": true
+        
+        "inStock": 1
     },
     {
         "id":11,
@@ -85,9 +75,8 @@
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$80",
         "image":"https://i.pinimg.com/564x/44/b9/35/44b935809bd6a71c12200d48ccf3408d.jpg",
-        "max": 5,
-        "min": 2,
-        "inStock": true
+        "inStock": 3
+
     },
     {
         "id":12,
@@ -95,8 +84,6 @@
         "description":"Lorem ipsum dolor sit amet consectetur adip",
         "price" : "$80",
         "image":"https://i.pinimg.com/originals/a9/97/6c/a9976cc3ea9a135c145ea8e8cc508f2f.jpg",
-        "max": 5,
-        "min": 2,
-        "inStock": true
+        "inStock": 5
     }
 ]

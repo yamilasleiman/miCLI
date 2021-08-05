@@ -18,11 +18,6 @@ export default function NavBar() {
                         Productos
                     </Link>
                 </li>
-                <li>
-                    <Link to='/Carrito'>
-                        Carrito
-                    </Link>
-                </li>
             </ul>
             <button className="button-cart" onClick={() => setOpenModal(true)}>
                 <CartWidget />

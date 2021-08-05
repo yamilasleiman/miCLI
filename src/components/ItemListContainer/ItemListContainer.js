@@ -1,15 +1,14 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import productData from '../data.json';
-import ItemList from '../ItemList';
-export default function Promises() {
+import ItemList from '../ItemList/ItemList';
+export default function ItemListContainer() {
 
 const [products, setProducts] = useState([]);
 
 useEffect(() => {
     getProducts();
 }, []);
-
 
 const getProducts = async () =>{
     let ServerOnline = true;
@@ -20,7 +19,7 @@ const getProducts = async () =>{
             }else{
                 reject( new Error('Servidor sin conexion'));
             }
-        }, //3000
+        }, 3000
         );    
     });
     let data = await promesa;

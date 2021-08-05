@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import productData from '../data.json';
 import { useParams } from 'react-router-dom';
-import ButtonCountador from '../BotonContador';
-import ItemDetailContainer from '../ItemDetailContainer';
+import ButtonCountador from '../BotonContador/BotonContador';
+import ItemDetail from '../ItemDetail/ItemDetail';
 
-export default function ItemProduct() {
+export default function ItemDetailContainer() {
     const [miItem, setItem] = useState({})
 
     const ItemId = useParams({});
@@ -25,6 +25,7 @@ export default function ItemProduct() {
             }, );    
         });
         let data = await promesa;
+        console.log(data);
         data.forEach((element) => {
             if (element.id === parseInt(ItemId.ItemId)) {
                 setItem(element);
@@ -35,17 +36,15 @@ export default function ItemProduct() {
 
     return (
         <div className="item-product-container">
-            <ItemDetailContainer
+            <ItemDetail
                 image={miItem.image}
                 title={miItem.tittle}
                 price={miItem.price}
                 description={miItem.description}
                 />
-            <ButtonCountador
-                max={miItem.max}
-                min={miItem.min}
+           {/*<ButtonCountador
                 stock={miItem.inStock}
-            />
+           />*/}
         </div>
     );
 }
