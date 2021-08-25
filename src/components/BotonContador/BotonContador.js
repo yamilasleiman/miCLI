@@ -14,17 +14,19 @@ export default function ItemCount({ stock, add }) {
             return setCount(count + 1) 
         };
     }
-
     return (
-        <div>
-            <button className="item-button" onClick={restar}>-</button>
-            <span>{count}</span>
-            <button className="item-button" onClick={sumar}>+</button>
-            <button
-                className="item-button"
-                onClick={add}
-            > 
-            Agregar al carrito</button>
+        <div className="BC">
+            <div className="contador">
+                <button className="item-button" onClick={restar}>-</button>
+                <span>{count}</span>
+                <button className="item-button" onClick={sumar}>+</button>
+            </div>
+            <button class="button"
+            onClick={add}>
+	            Agregar al carrito
+	            <div className="button__horizontal"></div>
+	            <div className="button__vertical"></div>
+            </button>
         </div>
     )
 }

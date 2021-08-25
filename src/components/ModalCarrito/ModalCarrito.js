@@ -5,7 +5,6 @@ function ModalCarrito(show) {
 
     return (
         <>
-        {console.log("??????????", openModal)}
         {openModal && (
             <div className="moda-cart-container">
                 <button onClose={() => setOpenModal(false)}>Cerrar</button>

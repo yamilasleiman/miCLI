@@ -37,14 +37,12 @@ export default function ItemDetailContainer() {
     return (
         <div className="item-product-container">
             <ItemDetail
+                title={miItem.title}
                 image={miItem.image}
-                title={miItem.tittle}
                 price={miItem.price}
                 description={miItem.description}
-                />
-           {/*<ButtonCountador
                 stock={miItem.inStock}
-           />*/}
+                />
         </div>
     );
 }

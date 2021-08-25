@@ -4,15 +4,16 @@ import ButtonCountador from '../BotonContador/BotonContador';
 
 export default function ItemDetail(props) {
     return (
-        <div>
+        <div className="especial">
+            <div className="estilos">
             <img src={props.image} ></img>
             <h2>{props.title}</h2>
-            <p>{props.price}</p>
+            <p className="precio">{props.price}</p>
             <p>{props.description}</p>
+            </div>
             <ButtonCountador
-            stock={miItem.inStock}
+            stock={props.stock}
            />
         </div>
-        /*agregar contador aca*/
     )
 }

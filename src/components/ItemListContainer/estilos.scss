@@ -3,14 +3,125 @@
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    a {
+        list-style-type: none;
+        text-decoration: none;
+        text-align: center;
+        height: 330px;
+        box-shadow: 0 0 3px 0;
+        border-radius: 30px;
+	}
     
 }
+.especial{
+    display: flex;
+    .estilos {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+		p{
+			color:#91a2aa;
+		}
+		h2{
+			text-transform: uppercase;
+			letter-spacing: .25em;
+		}
+    }
+    .BC {
+        width: 33%;
+        padding: 92px 0px 0px 0px;
+        .contador {
+            padding: 0px 0px 16px 0px;
+            span {
+                padding: 7px;
+            }
+        }
+    }
+}
+
+
 .item-button{
     display: inline-block;
-    text-decoration: none;
-    border-radius: 20px 20px 20px 20px;
-    padding: 10px 20px 10px 20px;
-    background-color: rgb(97, 59, 59);
-    color: #fff;
-    margin-top: 9px;
+    border-radius: 1px 24px 1px 20px;
+    padding: 5px 11px 5px 11px;
+    color: #607d8b;
+    margin-top: 20px;
+}
+
+.button {
+	
+	--offset: 10px;
+	--border-size: 2px;
+	
+	display: flex;
+	position: relative;
+	padding: 1.5em 3em;
+	appearance: none;
+	border: 0;
+	background: transparent;
+	color: #607d8b;
+	text-transform: uppercase;
+	letter-spacing: .25em;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 0;
+	box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+	transition: background .8s ease;
+	
+	&:hover {
+		background: rgba(100, 0, 0, .03);
+	}
+	
+	&__horizontal,
+	&__vertical {
+		position: absolute;
+		top: var(--horizontal-offset, 0);
+		right: var(--vertical-offset, 0);
+		bottom: var(--horizontal-offset, 0);
+		left: var(--vertical-offset, 0);
+		transition: transform .8s ease;
+		will-change: transform;
+		
+		&::before {
+			content: '';
+			position: absolute;
+			border: inherit;
+		}
+	}
+	
+	&__horizontal {
+		--vertical-offset: calc(var(--offset) * -1);
+		border-top: var(--border-size) solid currentcolor;
+		border-bottom: var(--border-size) solid currentcolor;
+		
+		&::before {
+			top: calc(var(--vertical-offset) - var(--border-size));
+			bottom: calc(var(--vertical-offset) - var(--border-size));
+			left: calc(var(--vertical-offset) * -1);
+			right: calc(var(--vertical-offset) * -1);
+		}
+	}
+	
+	&:hover &__horizontal {
+		transform: scaleX(0);
+	}
+	
+	&__vertical {
+		--horizontal-offset: calc(var(--offset) * -1);
+		border-left: var(--border-size) solid currentcolor;
+		border-right: var(--border-size) solid currentcolor;
+		
+		&::before {
+			top: calc(var(--horizontal-offset) * -1);
+			bottom: calc(var(--horizontal-offset) * -1);
+			left: calc(var(--horizontal-offset) - var(--border-size));
+			right: calc(var(--horizontal-offset) - var(--border-size));
+		}
+	}
+	
+	&:hover &__vertical {
+		transform: scaleY(0);
+	}
+	
 }

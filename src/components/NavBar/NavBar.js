@@ -24,6 +24,10 @@ export default function NavBar() {
             </button>
             {openModal && (
                 <div className="moda-cart-container">
+                    <div>
+                    <p>Producto</p>
+                    <p>Precio</p>
+                    </div>
                     <button onClick={() => setOpenModal(false)}>Cerrar</button>
                     <Link to='/Carrito'>
                         Finalizar Pedido

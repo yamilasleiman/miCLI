@@ -19,7 +19,7 @@ const getProducts = async () =>{
             }else{
                 reject( new Error('Servidor sin conexion'));
             }
-        }, 3000
+        }, //3000
         );    
     });
     let data = await promesa;
@@ -28,7 +28,9 @@ const getProducts = async () =>{
 
     return (
         <div className='Product_Container'>
-            <ItemList products={products} />
+            <div className="contenedor">
+                <ItemList products={products} />
+            </div>
         </div>
     )
 }

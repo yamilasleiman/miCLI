@@ -2,6 +2,7 @@
 @import '../components/CartWidget/styles.scss';
 @import '../components/ItemListContainer/estilos.scss';
 @import '../components/ModalCarrito/modal.scss';
+@import '../components/ItemDetailContainer/ItemDetailContainer.scss';
 * {
   margin: 0 auto;
 }
@@ -12,7 +13,7 @@
   position: fixed;
   top: 0;
   padding: 15px 0 15px 0;
-  background: antiquewhite;
+  background: #91a2aa;
 }
 .menu {
   display: block;
@@ -27,6 +28,23 @@
     text-decoration: none;
     font-size: 20px;
     text-transform: uppercase;
+    color:black;
+  }
+}
+
+.contenedor {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  a{
+    width: 475px;
+  }
+  h2{
+    color:black;
+  }
+  p{
+    color:#91a2aa;
   }
 }
 
