@@ -25,7 +25,6 @@ export default function ItemDetailContainer() {
             }, );    
         });
         let data = await promesa;
-        console.log(data);
         data.forEach((element) => {
             if (element.id === parseInt(ItemId.ItemId)) {
                 setItem(element);
@@ -33,7 +32,6 @@ export default function ItemDetailContainer() {
             }
         })
     }
-
     return (
         <div className="item-product-container">
             <ItemDetail

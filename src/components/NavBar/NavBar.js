@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
+import { CartContext, useCartContext } from '../Contex';
+
 
 export default function NavBar() {
+    const { cartCount } = useCartContext ();
+  
     const [openModal, setOpenModal] = useState(false)
 
     return(
@@ -24,13 +28,9 @@ export default function NavBar() {
             </button>
             {openModal && (
                 <div className="moda-cart-container">
-                    <div>
-                    <p>Producto</p>
-                    <p>Precio</p>
-                    </div>
                     <button onClick={() => setOpenModal(false)}>Cerrar</button>
-                    <Link to='/Carrito'>
-                        Finalizar Pedido
+                    <Link to='/Carrito' >
+                        Finalizar Pedido {cartCount}
                     </Link>
                 </div>
             )}

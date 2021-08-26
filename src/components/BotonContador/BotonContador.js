@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { useCartContext } from '../Contex';
+
 
 export default function ItemCount({ stock, add }) {
     const [count, setCount] = useState(0);
+    
+    const { addToCart } = useCartContext();
 
     const restar = () => {
         if(count > 0){
@@ -22,7 +26,7 @@ export default function ItemCount({ stock, add }) {
                 <button className="item-button" onClick={sumar}>+</button>
             </div>
             <button class="button"
-            onClick={add}>
+            onClick={() => addToCart (count)}>
 	            Agregar al carrito
 	            <div className="button__horizontal"></div>
 	            <div className="button__vertical"></div>

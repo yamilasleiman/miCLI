@@ -1,7 +1,6 @@
 import React from 'react';
 import ButtonCountador from '../BotonContador/BotonContador';
 
-
 export default function ItemDetail(props) {
     return (
         <div className="especial">

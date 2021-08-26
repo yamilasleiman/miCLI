@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
+import { useCartContext } from '../Contex';
+
 
 function ModalCarrito(show) {
+    const [item, setItem] = useState([]);
+    const { addToCart} = useCartContext()
+
     const [openModal, setOpenModal] = useState(show)
 
     return (
